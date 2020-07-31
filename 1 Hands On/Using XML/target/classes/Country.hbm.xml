@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+	<class name="com.cts.spring.jpa.handsOn2.pojo.Country" table="country">
+		<meta attribute="class-description">
+			This class contains Country codes 
+		</meta>
+		<id name="code" type="java.lang.String" column="co_code"/>
+		<property name="name" column="co_name" type="java.lang.String"/>
+	</class>
+</hibernate-mapping>
